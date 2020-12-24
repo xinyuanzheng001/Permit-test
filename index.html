@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id='welcome'>
+        <h1>麻省驾照中文模拟笔试</h1>
+        <a href="test.html" id="start">开始</a>
+        <a href="reviews.html">复习</a>
+    </div>
+    <div id="test" style="display: none;">
+        <p id="time"></p>
+        <h3 id="test-question">
+        </h3>
+        <b><li id="select1">
+            <!-- <b>dashiuhi</b> -->
+        </li></b>
+        <b><li id="select2">
+            <!-- <b>sdjohcxz</b> -->
+        </li></b>
+        <b><li id="select3">
+            <!-- <b>czxcxz</b> -->
+        </li></b>
+        <b><li id="select4">
+            <!-- <b>sadjo</b> -->
+        </li></b>
+        <button class="next">下一题</button>
+        <button class="submit" style="display: none;">提交</button>
+        <a href="test.html" class="return">返回首页</a>
+    </div>
+    <div id="result" style="display: none;">
+        <h3 class="result">恭喜</h3>
+        <a href="test.html" class="return">返回首页</a>
+    </div>
+    <div class="review-table" style="display: none;">
+        <table>
+            <tr>
+                <th class="question">题目</th>
+                <th class="answer">答案</th>
+            </tr>
+            <tr id="1">
+                <td id="question">在高速公路变更车道时，应提前开启转向灯，观察情况，确认安全后在变道？</td>
+                <td id="answer">正确</td>
+                <td style="display: none;">错误</td>
+            </tr>
+            <tr id="2">
+                <td id="question">将转向灯开关向下拉，右转向灯亮？</td>
+                <td id="answer">错误</td>
+                <td style="display: none;">正确</td>
+            </tr>
+            <tr id="3">
+                <td id="question">车辆在抵押登记，备案期间不可以办理转移登记？</td>
+                <td id="answer">正确</td>
+                <td style="display: none;">错误</td>
+            </tr>
+            <tr id="4">
+                <td id="question">安装防抱制动装置(ABS)的机动车制动时，制动距离会大大缩短，因此不必保持安全车距？</td>
+                <td id="answer">错误</td>
+                <td style="display: none;">正确</td>
+            </tr>
+            <tr id="5">
+                <td id="question">在实线的时候可以转换车道？</td>
+                <td id="answer">错误</td>
+                <td style="display: none;">正确</td>
+            </tr>
+            <tr id="6">
+                <td id="question">当你看到黄灯闪烁时，你要怎么办？</td>
+                <td id="answer">减速慢行</td>
+                <td style="display: none;">停车确认安全后前行</td>
+                <td style="display: none;">正常前行</td>
+                <td style="display: none;">加速行驶</td>
+            </tr>
+            <tr id="7">
+                <td id="question">当你在行车时听到紧急信号的车，你要怎么做？</td>
+                <td id="answer">确认安全后尽快靠最右车道停下</td>
+                <td style="display: none;">确认安全后尽快靠最左车道停下</td>
+                <td style="display: none;">加速前行</td>
+                <td style="display: none;">正常行使</td>
+            </tr>
+            <tr id="8">
+                <td id="question">除非有标志指明，不然在市区，住宅区的最高驾驶速度是多少？</td>
+                <td id="answer">30英里</td>
+                <td id="hide">20英里</td>
+                <td id="hide">25英里</td>
+                <td id="hide">35英里</td>
+            </tr>
+            <tr id="9">
+                <td id="question">当红灯亮时，你要怎么做？</td>
+                <td id="answer">停车，知道信号灯为绿灯，同时确认安全才前进</td>
+                <td id="hide">减速，确认安全后前进</td>
+                <td id="hide">加速行驶</td>
+                <td id="hide">停车，确认安全后就可以前进</td>
+            </tr>
+            <tr id="10">
+                <td id="question">当驶入高速公路的时候， 你要怎么做？</td>
+                <td id="answer">加速达到高速公路的速度，然后驶入高速公路</td>
+                <td id="hide">停车，确认安全后进入高速</td>
+                <td id="hide">减速，然后驶入高速</td>
+                <td id="hide">直接驶入高速</td>
+            </tr>
+            <tr id="11">
+                <td id="question">在双向路上，你如果想左转，你应该在什么位置？</td>
+                <td id="answer">靠近中线的车道</td>
+                <td id="hide">靠近右线的车道</td>
+                <td id="hide">随意在哪条车道都可以</td>
+                <td id="hide">只要不在最右车道就行</td>
+            </tr>
+            <tr id="12">
+                <td id="question">在单程路上你想转左之前，你应在路的什么位置？</td>
+                <td id="answer">靠近路的左手边</td>
+                <td id="hide">靠近路的中间</td>
+                <td id="hide">靠近路的右边</td>
+                <td id="hide">在路的哪个位置都行</td>
+            </tr>
+            <tr id="13">
+                <td id="question">在十字路口闪着红灯，表示什么？</td>
+                <td id="answer">停车，直至安全才前进</td>
+                <td id="hide">减速慢行</td>
+                <td id="hide">加速前行</td>
+                <td id="hide">正常行驶</td>
+            </tr>
+            <tr id="14">
+                <td id="question">在什么情况下，红灯可以左转？</td>
+                <td id="answer">在有交警指挥的时候</td>
+                <td id="hide">任何时候都不可以</td>
+                <td id="hide">确认安全后即可</td>
+                <td id="hide">在没有NO TURN ON RED的标志时</td>
+            </tr>
+            <tr id="15">
+                <td id="question">在什么情况下，红灯可以右转？</td>
+                <td id="answer">在有交警指挥或者没有NO TURN ON RED 标志时可以右转</td>
+                <td id="hide">任何时候都可以</td>
+                <td id="hide">任何时候都不可以</td>
+                <td id="hide">确认安全后就可以</td>
+            </tr>
+            <tr id="16">
+                <td id="question">当到达十字路口，绿灯刚转黄灯，你应怎样做？</td>
+                <td id="answer">停车，如果停车是危险的，前进要加倍小心</td>
+                <td id="hide">加速开过去</td>
+                <td id="hide">减速开过去</td>
+                <td id="hide">停车，确认安全后马上开过去</td>
+            </tr>
+            <tr id="17">
+                <td id="question">某人的驾驶执照被吊销后他</td>
+                <td id="answer">在任何情况下都不准驾驶</td>
+                <td id="hide">可以申请临时驾照</td>
+                <td id="hide">可以继续驾驶</td>
+                <td id="hide">在有他人陪伴下可以继续行驶</td>
+            </tr>
+            <tr id="18">
+                <td id="question">当两架车在大约同一时间驶到没有标志的十字路口，哪一架车有优先权？</td>
+                <td id="answer">从右方驶来的车辆</td>
+                <td id="hide">都有优先权</td>
+                <td id="hide">都没有优先权</td>
+                <td id="hide">从正面驶来的车辆</td>
+            </tr>
+            <tr id="19">
+                <td id="question">在什么时候需要把车头灯开着？</td>
+                <td id="answer">日落前半小时和日出后半小时</td>
+                <td id="hide">日落前15分钟和日出后15分钟</td>
+                <td id="hide">日落前45分钟和日出后45分钟</td>
+                <td id="hide">日落前1小时和日出后1小时</td>
+            </tr>
+            <tr id="20">
+                <td id="question">酒精在人体血液中占什么份量，使你成为危险驾驶者及有罪?</td>
+                <td id="answer">0.08%</td>
+                <td id="hide">0.07%</td>
+                <td id="hide">0.09%</td>
+                <td id="hide">0.10%</td>
+            </tr>
+            <tr id="21">
+                <td id="question">在十字路口，亮红灯并有绿色箭头表示什么？</td>
+                <td id="answer">小心向着箭头的方向转，让路于有优先权的车辆及行人</td>
+                <td id="hide">可以往箭头方向行驶</td>
+                <td id="hide">不可往箭头方向行驶</td>
+                <td id="hide">小心向着箭头的方向转，不必让路于其他车辆及行人</td>
+            </tr>
+            <tr id="22">
+                <td id="question">如果交通灯转了，而行人仍然在过马路，谁有优先权？</td>
+                <td id="answer">行人</td>
+                <td id="hide">车</td>
+                <td id="hide">都没有</td>
+                <td id="hide">谁先到路口谁有</td>
+            </tr>
+            <tr id="23">
+                <td id="question">如果你置身于交通意外，而当时有人受伤，你要怎么做？</td>
+                <td id="answer">立即报告意外于最近的州警察或当地警察</td>
+                <td id="hide">立即联系家人朋友前来</td>
+                <td id="hide">立即联系保险公司</td>
+                <td id="hide">立即联系急救车</td>
+            </tr>
+            <tr id="24">
+                <td id="question">如果你被控醉酒行车，第一次会被罚停牌多久？</td>
+                <td id="answer">6个月</td>
+                <td id="hide">9个月</td>
+                <td id="hide">12个月</td>
+                <td id="hide">3个月</td>
+            </tr>
+            <tr id="25">
+                <td id="question"><img src="images/one_way.gif" alt="img" width="120px"></td>
+                <td id="answer">单行道</td>
+                <td id="hide">双行道</td>
+                <td id="hide">左转</td>
+                <td id="hide">右转</td>
+            </tr>
+            <tr id="26">
+                <td id="question"><img src="images/left_turn.jpg" alt="img" width="120px"></td>
+                <td id="answer">向左急转弯</td>
+                <td id="hide">向右急转弯</td>
+                <td id="hide">向左绕行</td>
+                <td id="hide">连续弯道</td>
+            </tr>
+            <tr id="27">
+                <td id="question"><img src="images/rotary.jpg" alt="img" width="120px"></td>
+                <td id="answer">环岛</td>
+                <td id="hide">右侧通行</td>
+                <td id="hide">左侧通行</td>
+                <td id="hide">右转</td>
+            </tr>
+            <tr id="28">
+                <td id="question"><img src="images/echo.jpg" alt="img" width="120px"></td>
+                <td id="answer">禁止按喇叭</td>
+                <td id="hide">断续按喇叭</td>
+                <td id="hide">减速按喇叭</td>
+                <td id="hide">禁止长时间按喇叭</td>
+            </tr>
+            <tr id="29">
+                <td id="question"><img src="images/double_way.jpg" alt="img" width="120px"></td>
+                <td id="answer">双向路</td>
+                <td id="hide">单向路</td>
+                <td id="hide">减速</td>
+                <td id="hide">分离车道</td>
+            </tr>
+            <tr id="30">
+                <td id="question"><img src="images/stop.png" alt="img" width="120px"></td>
+                <td id="answer">停车</td>
+                <td id="hide">合并车道</td>
+                <td id="hide">校区人行道</td>
+                <td id="hide">靠右行车</td>
+            </tr>
+            <tr id="31">
+                <td id="question"><img src="images/do_not_enter.png" alt="img" width="120px"></td>
+                <td id="answer">禁止驶入</td>
+                <td id="hide">铁路</td>
+                <td id="hide">靠右行驶</td>
+                <td id="hide">合并车道</td>
+            </tr>
+            <tr id="32">
+                <td id="question"><img src="images/school.jpg" alt="img" width="120px"></td>
+                <td id="answer">校区</td>
+                <td id="hide">减速</td>
+                <td id="hide">让路</td>
+                <td id="hide">住宅区</td>
+            </tr>
+            <tr id="33">
+                <td id="question"><img src="images/merge.png" alt="img" width="120px"></td>
+                <td id="answer">前方道路合并</td>
+                <td id="hide">停车</td>
+                <td id="hide">前面有坡路</td>
+                <td id="hide">左转</td>
+            </tr>
+            <tr id="34">
+                <td id="question"><img src="images/railroad.jpg" alt="img" width="120px"></td>
+                <td id="answer">铁路</td>
+                <td id="hide">合并车道</td>
+                <td id="hide">靠右行车</td>
+                <td id="hide">单行路</td>
+            </tr>
+            <tr id="35">
+                <td id="question"><img src="images/slip.jpg" alt="img" width="120px"></td>
+                <td id="answer">前方路滑</td>
+                <td id="hide">前方路窄</td>
+                <td id="hide">合并车道</td>
+                <td id="hide">校区</td>
+            </tr>
+            <tr id="36">
+                <td id="question"><img src="images/yield.jpg" alt="img" width="120px"></td>
+                <td id="answer">让路</td>
+                <td id="hide">停车</td>
+                <td id="hide">禁止驶入</td>
+                <td id="hide">禁止右转</td>
+            </tr>
+            <tr id="37">
+                <td id="question"><img src="images/no_right_turn.png" alt="img" width="120px"></td>
+                <td id="answer">禁止右转</td>
+                <td id="hide">可以右转</td>
+                <td id="hide">只能右转</td>
+                <td id="hide">左转</td>
+            </tr>
+            <tr id="38">
+                <td id="question"><img src="images/no_u_turn.jpg" alt="img" width="120px"></td>
+                <td id="answer">禁止调头</td>
+                <td id="hide">前方可调头</td>
+                <td id="hide">禁止左转</td>
+                <td id="hide">禁止右转</td>
+            </tr>
+            <tr id="39">
+                <td id="question"><img src="images/keep_right.jpg" alt="img" width="120px"></td>
+                <td id="answer">靠右行驶</td>
+                <td id="hide">靠左行驶</td>
+                <td id="hide">不能靠左</td>
+                <td id="hide">不能靠右</td>
+            </tr>
+            <tr id="40">
+                <td id="question"><img src="images/road_work.png" alt="img" width="120px"></td>
+                <td id="answer">前方道路施工</td>
+                <td id="hide">禁止驶入</td>
+                <td id="hide">前方道路关闭</td>
+                <td id="hide">前方绕行</td>
+            </tr>
+            <tr id="41">
+                <td id="question"><img src="images/road_close.png" alt="img" width="120px"></td>
+                <td id="answer">前方道路关闭</td>
+                <td id="hide">前方道路施工</td>
+                <td id="hide">前方绕行</td>
+                <td id="hide">禁止驶入</td>
+            </tr>
+            <tr id="42">
+                <td id="question"><img src="images/detour.jpg" alt="img" width="120px"></td>
+                <td id="answer">车辆改道绕行</td>
+                <td id="hide">前方道路施工</td>
+                <td id="hide">前方道路关闭</td>
+                <td id="hide">禁止驶入</td>
+            </tr>
+            <tr id="43">
+                <td id="question"><img src="images/hospital.png" alt="img" width="120px"></td>
+                <td id="answer">医院</td>
+                <td id="hide">高速</td>
+                <td id="hide">信息中心</td>
+                <td id="hide">加油站</td>
+            </tr>
+            <tr id="44">
+                <td id="question"><img src="images/info.png" alt="img" width="120px"></td>
+                <td id="answer">信息中心</td>
+                <td id="hide">医院</td>
+                <td id="hide">高速</td>
+                <td id="hide">加油站</td>
+            </tr>
+            <tr id="45">
+                <td id="question"><img src="images/no_left_turn.gif" alt="img"></td>
+                <td id="answer">禁止左转</td>
+                <td id="hide">禁止右转</td>
+                <td id="hide">左转</td>
+                <td id="hide">右转</td>
+            </tr>
+            <tr id="40">
+                <td id="question"></td>
+                <td id="answer"></td>
+                <td id="hide"></td>
+                <td id="hide"></td>
+                <td id="hide"></td>
+            </tr>
+            <tr id="40">
+                <td id="question"></td>
+                <td id="answer"></td>
+                <td id="hide"></td>
+                <td id="hide"></td>
+                <td id="hide"></td>
+            </tr>
+            <tr id="40">
+                <td id="question"></td>
+                <td id="answer"></td>
+                <td id="hide"></td>
+                <td id="hide"></td>
+                <td id="hide"></td>
+            </tr>
+            <tr id="40">
+                <td id="question"></td>
+                <td id="answer"></td>
+                <td id="hide"></td>
+                <td id="hide"></td>
+                <td id="hide"></td>
+            </tr>
+
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
