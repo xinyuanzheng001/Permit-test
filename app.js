@@ -21,7 +21,7 @@ let answer = "";
 let c = "";
 let correct_count = -1;
 let r_set = new Set();
-let totalTime = 1000 * 150;
+let totalTime = 1000 * 60 * 25;
 let distance = 0;
 let randonNumber = Math.ceil(Math.random() * 30);
 document.querySelector("#start").addEventListener("click", first);

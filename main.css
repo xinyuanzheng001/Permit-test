@@ -6,7 +6,7 @@
     margin: auto;
     margin-top: 300px;
     padding-bottom: 30px;
-
+    min-width: 300px;
 }
  
 a {
@@ -69,8 +69,9 @@ tr:hover {background-color:lightgray;}
     /* margin: auto; */
     border: 1px solid lightgray;
     left: 50%;
-    top: 50%;
+    top: 35%;
     transform: translate(-50%, -50%);
+    min-width: 300px;
     /* padding-left: 15px; */
 }
 h3 {
@@ -93,7 +94,8 @@ li {
 }
 
 button {
-    width: 30%;
+    width: 35%;
+    /* width: 100px; */
     margin-top: 15px;
     margin-bottom:15px;
     margin-left: 35%;
