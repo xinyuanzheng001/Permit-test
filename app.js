@@ -23,7 +23,7 @@ let correct_count = -1;
 let r_set = new Set();
 let totalTime = 1000 * 60 * 25;
 let distance = 0;
-let randonNumber = Math.ceil(Math.random() * 68);
+let randonNumber = Math.ceil(Math.random() * 100);
 document.querySelector("#start").addEventListener("click", first);
 
 function first(e) {
@@ -131,9 +131,9 @@ function next(e) {
             showResult(e);
         }
         document.querySelector("#test-question").innerHTML = "";
-        randonNumber = Math.ceil(Math.random() * 68);
+        randonNumber = Math.ceil(Math.random() * 100);
         while(r_set.has(randonNumber)) {
-            randonNumber = Math.ceil(Math.random() * 68);
+            randonNumber = Math.ceil(Math.random() * 100);
         }
         r_set.add(randonNumber);
         let new_question = document.getElementById(randonNumber);
