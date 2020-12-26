@@ -73,7 +73,7 @@ function next(e) {
         correct_count++;
         
     } else if (t == true && c != answer){
-        let wrong = document.querySelector("#wrongCollections");
+        document.querySelector("#wrongCollections").style.display = "";
         let t = document.querySelector(".wrong");
         let q = document.createElement("h3");
         let s1 = document.createElement("li");
@@ -92,7 +92,9 @@ function next(e) {
         t.insertAdjacentElement("afterend", s2);
         t.insertAdjacentElement("afterend", s1);
         if(document.querySelector("#img")) {
-            t.insertAdjacentElement("afterend", document.querySelector("#img"));
+            let img = document.querySelector("#img");
+            img.id = "";
+            t.insertAdjacentElement("afterend", img);
         }
         t.insertAdjacentElement("afterend", q);
         if(s1.textContent == c) {
