@@ -137,6 +137,7 @@ p {
     margin: auto;
     margin-top: 5%;
     /* float: left; */
+    min-width: 300px;
 }
 li {
     font-weight: bold;
