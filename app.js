@@ -71,6 +71,53 @@ function next(e) {
     }
     if(c == answer) {
         correct_count++;
+        
+    } else if (t == true && c != answer){
+        let wrong = document.querySelector("#wrongCollections");
+        let t = document.querySelector(".wrong");
+        let q = document.createElement("h3");
+        let s1 = document.createElement("li");
+        let s2 = document.createElement("li");
+        let s3 = document.createElement("li");
+        let s4 = document.createElement("li");
+        q.innerHTML = document.querySelector("#test-question").textContent;
+        s1.innerHTML = select_1.textContent;
+        s2.innerHTML = select_2.textContent;
+        if(select_3.textContent) {
+                s3.innerHTML = select_3.textContent;
+                s4.innerHTML = select_4.textContent;
+                t.insertAdjacentElement("afterend", s4);
+                t.insertAdjacentElement("afterend", s3);
+        }
+        t.insertAdjacentElement("afterend", s2);
+        t.insertAdjacentElement("afterend", s1);
+        if(document.querySelector("#img")) {
+            t.insertAdjacentElement("afterend", document.querySelector("#img"));
+        }
+        t.insertAdjacentElement("afterend", q);
+        if(s1.textContent == c) {
+            s1.style.backgroundColor = 'red';
+        } else if(s2.textContent == c){
+            s2.style.backgroundColor = "red";
+        } else if(s3.textContent == c) {
+            console.log(s3);
+            s3.style.backgroundColor = "red";
+        } else if(s4.textContent == c) {
+            s4.style.backgroundColor = "red";
+        }
+        if(s1.textContent == answer) {
+            s1.style.backgroundColor = "lightgreen";
+        } else if(s2.textContent == answer) {
+            s2.style.backgroundColor = "lightgreen";
+        } else if(s3.textContent == answer) {
+            s3.style.backgroundColor = "lightgreen";
+        } else {
+            s4.style.backgroundColor = "lightgreen";
+        }
+        select_1.textContent = "";
+        select_2.textContent = "";
+        select_3.textContent = "";
+        select_4.textContent = "";
     }
     if (t) {
         count++;
@@ -130,6 +177,7 @@ function next(e) {
                 new_tag.setAttribute("src", question);
                 new_tag.setAttribute("width", "120");
                 new_tag.setAttribute("alt", "img");
+                new_tag.setAttribute("id", "img");
                 document.querySelector("#test-question").innerHTML = `${count}. 这个图标什么意思？<br>`;
                 document.querySelector("#test-question").appendChild(new_tag);
             } else {
@@ -148,6 +196,7 @@ function next(e) {
     }
     console.log(`correct: ${correct_count}`);
 }
+
 
 function showResult(e) {
     e.preventDefault();
