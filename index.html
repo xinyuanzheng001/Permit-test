@@ -10,7 +10,7 @@
     <div id='welcome'>
         <h1>驾照中文模拟笔试</h1>
         <a href="index.html" id="start">开始</a>
-        <a href="reviews.html">复习</a>
+        <a href="#" id="review">复习</a>
     </div>
     <div id="test" style="display: none;">
         <p id="time"></p>
@@ -40,6 +40,8 @@
         <h3 class="wrong">错误的题目：</h3>
     </div>
     <div class="review-table" style="display: none;">
+        <h1>试题复习</h1>
+        <a href="index.html">返回首页</a>
         <table>
             <tr>
                 <th class="question">题目</th>
@@ -484,48 +486,295 @@
                 <td id="hide">有效，直到注册证有效期过为止</td>
             </tr>
             <tr id="65">
+                <td id="question">驾驶执照的有效期是多少？</td>
+                <td id="answer">5年</td>
+                <td id="hide">4年</td>
+                <td id="hide">6年</td>
+                <td id="hide">3年</td>
+            </tr>
+            <tr id="66">
+                <td id="question">驾驶时戴耳机是违法的吗？</td>
+                <td id="answer">是，如果被检控会被罚款及吊销执照.</td>
+                <td id="hide">是，但只会罚款</td>
+                <td id="hide">不违法</td>
+                <td id="hide">是，但只会收到警察警告</td>
+            </tr>
+            <tr id="67">
+                <td id="question">在什么情形下可将驾照借给他人？</td>
+                <td id="answer">永远不可以</td>
+                <td id="hide">可以借给正在学车者</td>
+                <td id="hide">只可作表明身份用</td>
+                <td id="hide">在紧急时</td>
+            </tr>
+            <tr id="68">
+                <td id="question">当你驶近十字路口，正亮着红色交通灯，而警察打手势让你通过，你要怎么做？</td>
+                <td id="answer">服从警察的指挥，立即通过</td>
+                <td id="hide">等候绿灯</td>
+                <td id="hide">让警察知道现在是红灯</td>
+                <td id="hide">停下来，确定他要你通过</td>
+            </tr>
+            <tr id="69">
+                <td id="question">当你接近十字路口时，发觉十字路口前面交通很拥挤，你要怎么做？</td>
+                <td id="answer">停在十字路口之前，等待前面交通畅通后在前进</td>
+                <td id="hide">贴着前面的车辆行驶</td>
+                <td id="hide">慢慢驶入十字路口，直到前面交通畅通后在前进</td>
+                <td id="hide">按喇叭提醒前面车辆前进</td>
+            </tr>
+            <tr id="70">
+                <td id="question">什么时候可以换线？</td>
+                <td id="answer">打信号灯，确认安全后才能转线</td>
+                <td id="hide">减速打信号灯后即可</td>
+                <td id="hide">按喇叭提示其它车辆你要换线</td>
+                <td id="hide">看后视镜然后换线</td>
+            </tr>
+            <tr id="71">
+                <td id="question">大多数汽车打滑的原因是什么？</td>
+                <td id="answer">车速太快</td>
+                <td id="hide">车胎胎压不足</td>
+                <td id="hide">车胎胎压太大</td>
+                <td id="hide">路上有积雪或冰</td>
+            </tr>
+            <tr id="72">
+                <td id="question">在湿滑或结冰的路上快速停车的最后方法是什么？</td>
+                <td id="answer">用一踩一放的方法踩刹车，直到车辆完全停下来</td>
+                <td id="hide">不要踩刹车，让车自动减速停下</td>
+                <td id="hide">大力踩刹车，预防车辆滑行</td>
+                <td id="hide">像平常一样踩刹车</td>
+            </tr>
+            <tr id="73">
+                <td id="question">在大雾中行驶，要开哪种灯？</td>
+                <td id="answer">低灯</td>
+                <td id="hide">泊车灯</td>
+                <td id="hide">高灯</td>
+                <td id="hide">高灯及泊车灯</td>
+            </tr>
+            <tr id="74">
+                <td id="question">在你把车停在向下的斜坡时，你要怎么停？</td>
+                <td id="answer">扭前胎向右，并拉紧手刹</td>
+                <td id="hide">扭前胎向左，并拉紧手刹</td>
+                <td id="hide">拉紧手刹</td>
+                <td id="hide">把轮胎打直</td>
+            </tr>
+            <tr id="75">
+                <td id="question">当你知道后方一辆车准备超车时，你要怎么做？</td>
+                <td id="answer">确认安全后，驶向右边，让他超车</td>
+                <td id="hide">加速让他不能超车</td>
+                <td id="hide">打紧急灯，提示他不要超车</td>
+                <td id="hide">减速，阻止他超车</td>
+            </tr>
+            <tr id="76">
+                <td id="question">当你时速达到30英里的时候，你要和前车至少保持多远才安全？</td>
+                <td id="answer">3个车位的距离</td>
+                <td id="hide">2个车位的距离</td>
+                <td id="hide">4个车位的距离</td>
+                <td id="hide">5个车位的距离</td>
+            </tr>
+            <tr id="77">
+                <td id="question">当你把车驶出停车位前，你要怎么做？</td>
+                <td id="answer">打灯，确认安全后才驶出</td>
+                <td id="hide">打灯后即可驶出</td>
+                <td id="hide">按喇叭提示周围车辆，然后驶出</td>
+                <td id="hide">无需打灯，确认安全即可驶出</td>
+            </tr>
+            <tr id="78">
+                <td id="question">在夜间以最高限速行驶比日间更危险，为什么？</td>
+                <td id="answer">在夜间，视野比白天差</td>
+                <td id="hide">在夜间，路面更湿滑</td>
+                <td id="hide">在夜间，人的反应会变慢</td>
+                <td id="hide">在夜间，有些人会开远光灯</td>
+            </tr>
+            <tr id="79">
+                <td id="question">哪种手势表示减速？</td>
+                <td id="answer">手臂向下</td>
+                <td id="hide">手臂向左</td>
+                <td id="hide">手臂向上</td>
+                <td id="hide">转圆圈的动作</td>
+            </tr>
+            <tr id="80">
+                <td id="question">哪种手势表示左转？</td>
+                <td id="answer">手臂向左</td>
+                <td id="hide">手臂向下</td>
+                <td id="hide">手臂向上</td>
+                <td id="hide">转圆圈的动作</td>
+            </tr>
+            <tr id="81">
+                <td id="question">哪种手势表示右转？</td>
+                <td id="answer">手臂向上</td>
+                <td id="hide">手臂向左</td>
+                <td id="hide">手臂向下</td>
+                <td id="hide">转圆圈的动作</td>
+            </tr>
+            <tr id="82">
+                <td id="question">当前车停下来让行人过斑马线时，你应该怎么做？</td>
+                <td id="answer">停车，让行人过斑马线</td>
+                <td id="hide">按喇叭，提示前车前进</td>
+                <td id="hide">从左面超车</td>
+                <td id="hide">从右面超车</td>
+            </tr>
+            <tr id="83">
+                <td id="question">马路中间的断线表示什么？</td>
+                <td id="answer">在安全时，可以超车和换线</td>
+                <td id="hide">不能超车</td>
+                <td id="hide">随时可以超车</td>
+                <td id="hide">在日间可以超车</td>
+            </tr>
+            <tr id="84">
+                <td id="question">当你用平行泊车的方式将在停在两辆车之间后，还需要做什么？</td>
+                <td id="answer">将前车轮摆正，同时和前后两车保持足够的距离</td>
+                <td id="hide">尽可能离前面的车近一些</td>
+                <td id="hide">尽可能离后面的车近一些</td>
+                <td id="hide">让前车轮扭向路牙那一边</td>
+            </tr>
+            <tr id="85">
+                <td id="question">都知道开车不能超速，但为什么还要设置"最低速度限制"呢?</td>
+                <td id="answer">用以保障车流的顺畅通行</td>
+                <td id="hide">仅仅是一种建议，无需遵守</td>
+                <td id="hide">用于方便初学者练车</td>
+                <td id="hide">为了保障行人的安全</td>
+            </tr>
+            <tr id="86">
+                <td id="question">离开高速公路而进入普通公路时，你应该怎么做？</td>
+                <td id="answer">留意速度表，将车速调整到普通公路上所要求的数值</td>
+                <td id="hide">打转向灯以提醒普通公路上的其他车辆</td>
+                <td id="hide">迅速找一个加油站停车，然后检测剩余油量和轮胎</td>
+                <td id="hide">注意和其他车辆保持车距</td>
+            </tr>
+            <tr id="87">
+                <td id="question">在消防栓旁边停车时，需要距离它多远？</td>
+                <td id="answer">15英尺</td>
+                <td id="hide">9英尺</td>
+                <td id="hide">12英尺</td>
+                <td id="hide">6英尺</td>
+            </tr>
+            <tr id="88">
+                <td id="question">车子在结冰的路面上打滑时该怎么办?</td>
+                <td id="answer">不要踩刹车以避免车身突然甩动，同时尽力控制方向盘以保持稳定</td>
+                <td id="hide">轻踩刹车来减速</td>
+                <td id="hide">握紧方向盘并立刻刹车</td>
+                <td id="hide">不要踩刹车，同时立刻转弯离开路面</td>
+            </tr>
+            <tr id="89">
+                <td id="question">马路中间的实线表示什么？</td>
+                <td id="answer">不能超车和换线</td>
+                <td id="hide">可以超车和换线</td>
+                <td id="hide">没有车辆时可以超车</td>
+                <td id="hide">没有车辆时可以换线</td>
+            </tr>
+            <tr id="90">
+                <td id="question">夜晚开车时，对面车辆的灯光晃得你睁不开眼睛，应该如何消减这种影响？</td>
+                <td id="answer">将目光稍稍转向路面的右侧，以缓解光线的刺激</td>
+                <td id="hide">低头看方向盘</td>
+                <td id="hide">戴上墨镜</td>
+                <td id="hide">讲远光灯打开，和对面的车辆对着照射</td>
+            </tr>
+            <tr id="91">
+                <td id="question">法律规定，汽车的检查周期是多久？</td>
+                <td id="answer">1年1次</td>
+                <td id="hide">半年1次</td>
+                <td id="hide">9个月1次</td>
+                <td id="hide">1年半1次</td>
+            </tr>
+            <tr id="92">
+                <td id="question">喝掉一杯12盎司的啤酒后，血液内的酒精含量大约为0.02%，人体为了排除这些酒精需要多长时间？</td>
+                <td id="answer">1小时</td>
+                <td id="hide">1天</td>
+                <td id="hide">3小时</td>
+                <td id="hide">5小时</td>
+            </tr>
+            <tr id="93">
+                <td id="question">人体内负责降解酒精的器官是?</td>
+                <td id="answer">肝脏</td>
+                <td id="hide">肾脏</td>
+                <td id="hide">脑部</td>
+                <td id="hide">胰脏</td>
+            </tr>
+            <tr id="94">
+                <td id="question">警察手中的"呼吸分析器"是用来干什么的?
+                </td>
+                <td id="answer">测量人体内的酒精含量</td>
+                <td id="hide">帮助醉酒者清醒</td>
+                <td id="hide">测试司机是否吸食了大麻</td>
+                <td id="hide">测试司机是否疲劳驾驶</td>
+            </tr>
+            <tr id="95">
+                <td id="question">据统计，所有的交通意外死亡案例中有(____)是因酒后驾驶引发的?</td>
+                <td id="answer">50%</td>
+                <td id="hide">30%</td>
+                <td id="hide">70%</td>
+                <td id="hide">90%</td>
+            </tr>
+            <tr id="96">
+                <td id="question">下列哪种方法可以减缓人体对于酒精的吸收速度，以至于不会醉的那么快?</td>
+                <td id="answer">喝酒之前先吃东西</td>
+                <td id="hide">吃东西之前先喝酒</td>
+                <td id="hide">只喝啤酒</td>
+                <td id="hide">只喝红酒</td>
+            </tr>
+            <tr id="97">
+                <td id="question">交通法中根据什么来判定司机的驾驶能力受损或属于酒后驾驶?</td>
+                <td id="answer">当事人血液中的酒精含量</td>
+                <td id="hide">当事人对于酒精的忍耐力</td>
+                <td id="hide">当事人的视力和反应速度</td>
+                <td id="hide">当事人是否能直线行走</td>
+            </tr>
+            <tr id="98">
+                <td id="question">你和朋友聚会中饮酒了，回家时如何保证安全驾驶？</td>
+                <td id="answer">请没有喝酒的朋友开车带你回家</td>
+                <td id="hide">开车回家前先冲个冷水澡</td>
+                <td id="hide">开车回家前先喝杯咖啡</td>
+                <td id="hide">在回家前半小时内不要再喝酒了</td>
+            </tr>
+            <tr id="99">
+                <td id="question">如果你正在服药期间，应该如何安全驾驶？</td>
+                <td id="answer">在开车前阅读药物说明书，确保不会影响驾驶能力</td>
+                <td id="hide">服药期间的你只能在白天驾驶</td>
+                <td id="hide">开车前喝少量的酒可以低消药物的副作用</td>
+                <td id="hide">驾驶过程中定时停车休息</td>
+            </tr>
+            <tr id="100">
+                <td id="question">哪一种情况不会在你饮酒之后出现？</td>
+                <td id="answer">你会更加镇静和集中注意力</td>
+                <td id="hide">你对速度和距离的判断力会下降</td>
+                <td id="hide">你的反应会变得迟钝</td>
+                <td id="hide">你的视力可能会下降</td>
+            </tr>
+            <tr id="101">
                 <td id="question">一辆在路上行驶的车如无注册证、无车牌、无必须的安全设备，谁应该负责？</td>
                 <td id="answer">车主、驾驶人、负责人三人负责</td>
                 <td id="hide">车主</td>
                 <td id="hide">驾驶人</td>
                 <td id="hide">车主和车厂</td>
             </tr>
-            <tr id="66">
+            <tr id="102">
                 <td id="question">什么年龄才可以取得学车证？</td>
                 <td id="answer">16岁或以上</td>
                 <td id="hide">18岁或以上</td>
                 <td id="hide">21岁</td>
                 <td id="hide">无年龄限制</td>
             </tr>
-            <tr id="67">
+            <tr id="103">
                 <td id="question">如果警察，考牌官或调查人员要你签名，你必须如何做？</td>
                 <td id="answer">依法照做</td>
                 <td id="hide">无需依从</td>
                 <td id="hide">若无法院授权，无需照做</td>
                 <td id="hide">视情况而定要不要依从</td>
             </tr>
-            <tr id="68">
+            <tr id="104">
                 <td id="question">学车时谁负责？</td>
                 <td id="answer">学车者和教车者共同负责</td>
                 <td id="hide">学车者</td>
                 <td id="hide">教练</td>
                 <td id="hide">学车者监护人</td>
             </tr>
-            <tr id="60">
+            <tr id="105">
                 <td id="question"></td>
                 <td id="answer"></td>
                 <td id="hide"></td>
                 <td id="hide"></td>
                 <td id="hide"></td>
             </tr>
-            <tr id="60">
-                <td id="question"></td>
-                <td id="answer"></td>
-                <td id="hide"></td>
-                <td id="hide"></td>
-                <td id="hide"></td>
-            </tr>
-
+            
+            
         </table>
     </div>
     <script src="app.js"></script>

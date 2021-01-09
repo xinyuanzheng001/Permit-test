@@ -7,6 +7,12 @@ function shuffleArray(array) {
     }
 }
 
+let review = document.querySelector("#review");
+review.addEventListener("click", showReview);
+function showReview() {
+    document.querySelector(".review-table").style.display = "";
+    document.querySelector("#welcome").style.display = "none";
+}
 
 let select_1 = document.getElementById("select1");
 select_1.addEventListener("click", runEvent);
