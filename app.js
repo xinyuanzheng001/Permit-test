@@ -30,7 +30,7 @@ let r_set = new Set()
 let totalTime = 1000 * 60 * 25
 let distance = 0
 // let randonNumber = Math.ceil(Math.random() * 100);
-let randonNumber = Math.ceil(Math.random() * 155)
+let randonNumber = Math.ceil(Math.random() * 105)
 document.querySelector('#start').addEventListener('click', first)
 
 function first(e) {
